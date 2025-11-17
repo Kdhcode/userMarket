@@ -22,7 +22,9 @@
 
   <div class="product-container d-flex gap-4 flex-wrap">
     <div class="col-12 col-md-5">
-      <p class="text-muted mt-0 mb-3 text-left">홈 &gt; ${product.categoryName}</p>
+      <a href="${pageContext.request.contextPath}/product/list" class="text-decoration-none">
+         <p class="text-muted mt-0 mb-3 text-left">홈 &gt; ${product.categoryName}</p>
+      </a>
 
       <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
         <div class="carousel-inner">
